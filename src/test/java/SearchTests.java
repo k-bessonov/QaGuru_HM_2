@@ -13,7 +13,7 @@ public class SearchTests {
     }
 
     @Test
-    void successGoogleTest() {
+    void successDuckTest() {
         Configuration.holdBrowserOpen = true;
         open("https://duckduckgo.com");
         $("[name=q]").setValue("selenide").pressEnter();
