@@ -9,11 +9,11 @@ public class SearchTests {
     void successfulAntibotTest() {
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("html").shouldHave(text("Об совсм другой странице"));
+        $("html").shouldHave(text("Об совсем другой странице"));
     }
 
     @Test
-    void successGoogleTest() {
+    void successDuckTest() {
         Configuration.holdBrowserOpen = true;
         open("https://duckduckgo.com");
         $("[name=q]").setValue("selenide").pressEnter();
