@@ -9,7 +9,7 @@ public class SearchTests {
     void successfulAntibotTest() {
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("html").shouldHave(text("Об другой странице"));
+        $("html").shouldHave(text("Об совсм другой странице"));
     }
 
     @Test
